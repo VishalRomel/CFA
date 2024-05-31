@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+header {
+   
+
+}
+.glow { 
+    box-shadow: 0 0 10px rgba(133, 13, 245, 0.8); /* Glow effect for box without hover (stays glowing all the timne) */
+}
+.textglow{ 
+    text-shadow: 0 0 10px rgba(137, 11, 255, 0.8); /*Text Glow (Stays glowing all the time) */ 
+}
+.greenTextGlow{ 
+    text-shadow: 0 0 10px rgba(96, 255, 11, 0.8); /*Text Glow (Stays glowing all the time) */ 
+
+}
+
+.hover\:glow:hover {
+    box-shadow: 0 0 10px rgba(133, 13, 245, 0.8); /* Glow effect  when hover*/
+}
+
+
+
+
+.nav-item:hover {
+    transform: scale(1.05);
+    text-decoration: underline;
+    transition: transform 0.3s ease-in-out, text-decoration 0.3s ease-in-out;
+}
+
+
+.lottie-container {
+    position: relative;
+  }
+  
+  .lottie-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1));
+    pointer-events: none; /* Ensure the gradient overlay is also non-interactive */
+  }
+  
+
